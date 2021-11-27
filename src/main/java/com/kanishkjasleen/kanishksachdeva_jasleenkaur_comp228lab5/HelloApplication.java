@@ -32,7 +32,7 @@ public class HelloApplication extends Application {
     public void start(Stage primaryStage) throws IOException, InterruptedException, ClassNotFoundException, SQLException {
 
         Class.forName("oracle.jdbc.OracleDriver");
-        final Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@199.212.26.208:1521:SQLD", "COMP228_F21_015_21", "password");
+        final Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@199.212.26.208:1521:SQLD", "COMP228_F20_3421", "password");
 
         if (conn != null){
             System.out.println("Successfully connected");
